@@ -1,4 +1,4 @@
-import "./Grid.css";
+// import "./Grid.css";
 
 /**
  * @module grid-l

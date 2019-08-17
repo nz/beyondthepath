@@ -1,4 +1,4 @@
-import "./Cover.css";
+// import "./Cover.css";
 
 /**
  * @module cover-l

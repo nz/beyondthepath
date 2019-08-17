@@ -9,15 +9,13 @@ build
 
 # Start Jekyll in the background
 bundle exec jekyll build --incremental --watch &
-jekyll_pid=$!
 
 # Start Parcel in the background
-parcel serve _site/index.html &
-parcel_pid=$!
+yarn parcel serve _site/index.html -d public &
 
 # Wait for Parcel's HTTP server, then open it in a browser
-while ! curl -s -o /dev/null http://localhost:1234/; do sleep 0.1; done
-open http://localhost:1234/
+# while ! curl -s -o /dev/null http://localhost:1234/; do sleep 0.1; done
+# open http://localhost:1234/
 
 # Block on background tasks
 wait

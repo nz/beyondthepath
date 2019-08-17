@@ -36,14 +36,16 @@ exclude:
   - .cache
   - Gemfile
   - Gemfile.lock
+  - _config.yml
   - bin/
+  - config.ru
   - dist
   - node_modules
   - package.json
   - public
+  - tmp
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
   - yarn.lock
-  - tmp

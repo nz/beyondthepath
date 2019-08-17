@@ -1,3 +1,1 @@
-import "./every-layout";
-import "./normalize.css";
-import "./site.scss";
+import "./layout/*.js";

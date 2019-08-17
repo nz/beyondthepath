@@ -1,14 +1,9 @@
 ---
 title: The Hardest Part of the Job
+layout: post
 date: 2019-07-26T21:48:21.497Z
 excerpt: >-
   The hardest part of being a CEO is that part of you that you'd rather not think about.
-featuredpost: true
-featuredimage: /img/30028674430_faa36cb4d0_z.jpg
-tags:
-  - leadership
-  - firing
-  - discovery
 ---
 
 **Firing someone is the hardest part about being a CEO.** Not just because firing people truly sucks. But because of what it reveals about yourself as a leader and as a person.

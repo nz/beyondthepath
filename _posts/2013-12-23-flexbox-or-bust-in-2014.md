@@ -7,7 +7,7 @@ excerpt: "Leveling up our UI toolkit in the early-ish days of responsive design.
 
 About a week ago, I had a brief exchange with my business partner, Kyle:
 
-> **Kyle:** Btw, I think we should flexbox or bust on our CSS.
+> **Kyle:** Btw, I think we should flexbox or bust on our CSS.<br/>
 > **Nick:** I could be convinced.
 
 The [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/) (<q>CSS flexbox,</q> or just, <q>flexbox</q>) is a candidate recommendation for inclusion in CSS3. It's a box model that's <q>optimized for user interface design.</q> That's a rather *noble* goal for CSS. Frankly, one which feels years overdue.

@@ -1,4 +1,4 @@
-import "./Center.css";
+// import "./Center.css";
 
 /**
  * @module center-l

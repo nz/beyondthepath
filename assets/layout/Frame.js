@@ -1,4 +1,4 @@
-import "./Frame.css";
+// import "./Frame.css";
 
 /**
  * @module frame-l
