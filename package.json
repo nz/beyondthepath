@@ -2,5 +2,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "every-layout": "^1.0.6",
+    "normalize.css": "^8.0.1"
   }
 }

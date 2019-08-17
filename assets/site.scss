@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+// Global styles
+
+:root {
+  --measure: 60ch;
+  line-height: var(--ratio);
+  font-size: calc(0.333vw + 1em);
+  font-family: var(--font-plain);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+* {
+  box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-color: var(--color-dark);
+  border-width: 0;
+}
+
+[hidden] { display: none; }
+[hidden] + * { margin-top: 0 !important; }
+
+nav, main, header, footer {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+[tabindex='-1']:focus { outline: none }
