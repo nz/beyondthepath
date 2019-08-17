@@ -2,7 +2,7 @@
 title: "Flexbox or Bust in 2014"
 date:   2013-12-23 12:59:00
 layout: post
-excerpt: "Leveling up our UI toolkit in the early-ish days of responsive design."
+excerpt: "Leveling up our UI toolkit with <em>cutting-edge</em> 2013 browser technology."
 ---
 
 About a week ago, I had a brief exchange with my business partner, Kyle:

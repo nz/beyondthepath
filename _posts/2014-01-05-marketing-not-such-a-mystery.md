@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Marketing is not Such a Mystery"
+title: "Marketing: Not Such a Mystery?"
 date: 2014-01-05 09:49:00
 excerpt: "In which a first-time founder muses that <em>maybe</em> marketing is useful to a four year-old business."
 ---
