@@ -2,6 +2,7 @@
 layout: post
 title: "Marketing is not Such a Mystery"
 date: 2014-01-05 09:49:00
+excerpt: "In which a first-time founder muses that <em>maybe</em> marketing is useful to a four year-old business."
 ---
 
 The New Year is upon us. And there is so much work to do.

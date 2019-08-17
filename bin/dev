@@ -2,6 +2,10 @@
 
 set -e
 cd "$(dirname $0)/.." || exit
+export PATH="./bin:$PATH"
+
+setup
+build
 
 # Start Jekyll in the background
 bundle exec jekyll build --incremental --watch &

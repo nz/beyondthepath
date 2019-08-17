@@ -38,3 +38,26 @@ nav, main, header, footer {
 }
 
 [tabindex='-1']:focus { outline: none }
+
+.display\:inline-block { display: inline-block }
+
+
+.post {
+  .post-excerpt {
+    font-style: italic;
+    em { font-style: normal; }
+  }
+  .post-date {
+    font-size: var(--s-1);
+  }
+  .post-title {
+    color: var(--color-darkish);
+  }
+}
+
+blockquote {
+  font-size: var(--s0);
+  line-height: var(--s1);
+  margin-left: 1rem;
+  font-style: italic;
+}

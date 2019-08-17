@@ -5,4 +5,9 @@
 layout: home
 ---
 
-Hello blog.
+Hello world. A friend recently described blogging to me thus:
+
+> Blogging is a great way to process ideas and clarify your thinking.
+> Sometimes, as a side bonus, someone else will read it.
+
+In that spirit, here are some thoughts I've been processing. If you find yourself processing thoughts of your own, I welcome a conversation via [Twitter](https://twitter.com/nz_) or [email](mailto:nick@zadrozny.com).
