@@ -11,4 +11,6 @@ ParaTweet, for one, is a fun ongoing project, and always a good place to spend a
 
 Meanwhile, I also gradually ramped up my involvement with a startup project, Websolr. My friend and fellow UCSD alumni Kyle had approached me last fall to help do some infrastructure work. In the spring I started dipping my toes in to help build the next generation Websolr infrastructure, completely automated with Chef and some custom provisioning tools.
 
-Fast forward a few months and I've been ramped up to a full co-founder! Being a bootstrapped startup is a fantastic learning experience, and very gratifying for a jack of all trades such as myself. These days I find myself doing anything from handling sales and bizdev calls, to developing customer-facing features, writing documentation and handling support, and maintaining servers.
+Fast forward a few months and I've ramped up to a full co-founder!
+
+Being a bootstrapped startup is a fantastic learning experience, and very gratifying for a jack of all trades such as myself. These days I find myself doing anything from handling sales and bizdev calls, to developing customer-facing features, writing documentation and handling support, and maintaining servers.

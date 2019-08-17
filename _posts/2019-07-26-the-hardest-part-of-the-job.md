@@ -6,7 +6,7 @@ excerpt: >-
   The hardest part of being a CEO is that part of you that you'd rather not think about.
 ---
 
-**Firing someone is the hardest part about being a CEO.** Not just because firing people truly sucks. But because of what it reveals about yourself as a leader and as a person.
+Ask a CEO, and they'll probably agree: **firing someone is the hardest part of the job.** And not just because firing people feels bad. (Which it does.) But also because of what it reveals about yourself as a leader and as a person.
 
 I’m part of a peer group of about a dozen CEOs. We meet once a month as a group, and weekly with a coach who leads the group. A couple times a year we’ll be having drinks, when someone decides to start a little game.
 
