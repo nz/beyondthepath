@@ -8,3 +8,4 @@ public
 tmp
 .DS_Store
 yarn-error.log
+.jekyll-cache
