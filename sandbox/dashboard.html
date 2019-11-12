@@ -1,0 +1,94 @@
+---
+title: Cluster dashboard
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/assets/btp.js"></script>
+    <link rel="stylesheet" href="/assets/btp.css"/>
+    <link rel="stylesheet" href="/assets/cluster.css">
+
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+  </head>
+  <body>
+
+    <sidebar-l>
+      <div class="height-100vh">
+
+        <!-- Side of the sidebar -->
+        <stack-l splitafter="2">
+
+          <div id="logo">logo</div>
+
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ul>
+
+          <button>Button me good +</button>
+        </stack-l>
+
+        <!-- Sidebar main section -->
+        <main>
+          <stack-l>
+
+            <cluster-l justify="space-between">
+              <div>
+                <div>
+
+                  <nav>
+                    <cluster-l>
+                      <ul>
+                        <li>
+                          Bread Inc
+                        </li>
+                        <li>
+                          Crumbs
+                        </li>
+                      </ul>
+                    </cluster-l>
+                  </nav>
+
+                </div>
+                <div>
+                  <nav>
+                    <cluster-l>
+                      <ul>
+                        <li>
+                          Apps
+                        </li>
+                        <li>
+                          Help
+                        </li>
+                        <li>
+                          User McUserFace
+                        </li>
+                      </ul>
+                    </cluster-l>
+                  </nav>
+                </div>
+              </div>
+            </cluster-l>
+
+
+          </stack-l>
+        </main>
+
+
+      </div>
+    </sidebar-l>
+
+  </body>
+</html>

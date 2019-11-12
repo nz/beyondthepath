@@ -26,4 +26,14 @@ layout: default
       {%- endfor -%}
     </stack-l>
   {%- endif -%}
+
+  <small>
+    <ul>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <li><a href="{{ page.url | relative_url }}">{{ page.title }} {{ page.url | relative_url }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </small>
 </stack-l>
