@@ -34,7 +34,7 @@ export default class Stack extends HTMLElement {
   }
 
   get space() {
-    return this.getAttribute('space') || 'var(--s1)';
+    return this.getAttribute('space') || 'var(--s0)';
   }
 
   set space(val) {

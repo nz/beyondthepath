@@ -347,3 +347,13 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Collapse table borders
+ */
+table {
+  border-collapse: collapse;
+}
+td, th {
+  text-align: left;
+}

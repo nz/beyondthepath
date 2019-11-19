@@ -6,13 +6,19 @@
 
   /* Colors */
   --color-dark: hsl(0, 0%, 2%);
-  --color-darkish: hsl(0, 0%, 25%);
-  --color-lightish: hsl(0, 0%, 90%);
-  --color-light: hsl(0, 0%, 98%);
+  --color-darkish: hsl(0, 0%, 27%);
+  --color-lightish: hsl(0, 0%, 85%);
+  --color-light: hsl(0, 0%, 95%);
+  --color-lightest: hsl(0, 0%, 99%);
   --color-mid: hsl(0, 0%, 50%);
+
+  // relative shades
+  --color-darker: rgba(0, 0, 0, 0.25);
+  --color-even-darker: rgba(0, 0, 0, 0.5);
 
   /* Scale */
   --ratio: 1.4;
+  --s-6: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
   --s-5: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
   --s-4: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
   --s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));
@@ -34,5 +40,5 @@
   --line-height-small: calc(0.8 * var(--ratio));
 
   --border-thin: var(--s-5);
-  --border-thick: var(--s-2);
+  --border-thick: var(--s-4);
 }

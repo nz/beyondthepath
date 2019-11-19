@@ -1,0 +1,187 @@
+
+:root {
+  --measure: 60ch;
+  line-height: var(--ratio);
+  font-size: calc(0.5vw + 0.5em);
+  font-family: var(--font-plain);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+
+
+/* utility classes */
+
+// Apply monospace font
+.font-family\:mono {
+  font-family: var(--font-mono);
+}
+
+.height\:100vh {
+  height: 100vh;
+}
+
+.min-height\:100vh {
+  min-height: 100vh;
+}
+
+.height\:100pct {
+  height: 100%;
+}
+
+meter {
+  width: 100%;
+  height: var(--s-3);
+}
+
+/* Give the sidebar elements internal padding */
+sidebar-l {
+  --sidebar-padding: var(--s1);
+  > * {
+    > * {
+      padding: var(--sidebar-padding);
+    }
+    > :first-child #page-logo {
+      margin-top:   calc(-1 * var(--sidebar-padding));
+      margin-right: calc(-1 * var(--sidebar-padding));
+      margin-left:  calc(-1 * var(--sidebar-padding));
+      padding:      var(--sidebar-padding);
+    }
+    > :last-child #page-header {
+      margin-top:   calc(-1 * var(--sidebar-padding));
+      margin-right: calc(-1 * var(--sidebar-padding));
+      margin-left:  calc(-1 * var(--sidebar-padding));
+      padding:      var(--sidebar-padding);
+    }
+  }
+}
+
+/* Colors for the page left and right */
+sidebar-l > * {
+  > :first-child {
+    background-color: var(--color-darkish);
+    color: var(--color-light);
+    // darken the active nav element
+    .active {
+      background-color: var(--color-darker);
+    }
+  }
+  > :last-child {
+    background-color: var(--color-light);
+  }
+  #page-logo {
+    // background-color: rgba(0, 0, 0, 0.15);
+  }
+  #page-header {
+    background-color: var(--color-lightest);
+    box-shadow: 0 0 var(--s-2) 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* Nav list styling */
+nav ul {
+  list-style: none;
+}
+
+/* Indent nav lists on the left sidebar */
+sidebar-l > * > :first-child {
+  nav li li {
+    padding-left: var(--s-2);
+  }
+  nav > ul > li {
+    font-weight: 500;
+    font-variant: all-small-caps;
+    letter-spacing: var(--s-6);
+    margin-bottom: var(--s0);
+
+    > ul {
+      margin-top: var(--s-2);
+    }
+    li {
+      font-weight: normal;
+      font-variant: normal;
+      letter-spacing: normal;
+    }
+  }
+
+  // Back off the active element
+  nav li li.active {
+    margin-left:  calc(-1 * var(--sidebar-padding) - 1 * var(--s-2));
+    margin-right: calc(-1 * var(--sidebar-padding));
+    padding-left: calc(var(--sidebar-padding) + 2 * var(--s-2));
+  }
+  nav li.active {
+    margin-left:  calc(-1 * var(--sidebar-padding));
+    margin-right: calc(-1 * var(--sidebar-padding));
+    padding-left: calc(var(--sidebar-padding));
+  }
+}
+
+/* terms and definitions */
+dt {
+  font-size: var(--s-1);
+  font-variant: all-small-caps;
+}
+
+table {
+  width: 100%;
+}
+table td {
+}
+
+box-l {
+  overflow: auto;
+}
+
+/* General table rules */
+table {
+  cellpadding: 0;
+  cellspacing: 0;
+  td, th {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Box containing a table */
+box-l > table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  thead {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.015);
+    font-size: var(--s-1);
+  }
+  th, td {
+    padding: var(--s-2) var(--s-1)
+  }
+  tbody {
+    font-size: calc(var(--s-0) * 0.9);
+  }
+}
+
+/* Covers with a header */
+cover-l > header {
+  // this rule contradicts the cover-l inline style
+  // but the cover-l padding rules are too aggressive for our purposes
+  margin-bottom: var(--s-1) !important;
+
+  > cluster-l > * {
+    > :first-child {
+      font-weight: 500;
+      font-variant: all-small-caps;
+      font-size: var(--s-1);
+    }
+    > :last-child {
+      font-size: var(--s-1);
+    }
+  }
+}
+
+/* Our boxes have a shadow instead of a border */
+box-l {
+  background-color: var(--color-lightest);
+  box-shadow: 0 0 var(--s-4) var(--s-5) rgba(0, 0, 0, 0.1);
+}

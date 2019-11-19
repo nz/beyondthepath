@@ -11,7 +11,7 @@ title: Cluster dashboard
 
     <script src="/assets/btp.js"></script>
     <link rel="stylesheet" href="/assets/btp.css"/>
-    <link rel="stylesheet" href="/assets/cluster.css">
+    <link rel="stylesheet" href="/assets/cluster.scss">
 
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
@@ -21,36 +21,61 @@ title: Cluster dashboard
   </head>
   <body>
 
-    <sidebar-l>
-
-      <div class="height:100vh">
+    <sidebar-l space="0">
+      <div class="min-height:100vh">
 
         <!-- Sidebar page right -->
-        <stack-l splitafter="2">
+        <div id="page-left">
+          <stack-l splitafter="2">
 
-          <div id="logo">logo</div>
+            <div id="page-logo">bonsai</div>
 
-          <nav>
-            <ul>
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-              <li>Four</li>
-              <li>Five</li>
-            </ul>
-          </nav>
+            <nav>
+              <ul>
+                <li class="active">
+                  Overview
+                </li>
+                <li>
+                  Activity
+                  <ul>
+                    <li>Metrics</li>
+                    <li>Logs</li>
+                    <li>History</li>
+                  </ul>
+                </li>
+                <li>
+                  Data
+                  <ul>
+                    <li class="active">Console</li>
+                    <li>Integrations</li>
+                    <li>Lifecycle</li>
+                  </ul>
+                </li>
+                <li>
+                  Access
+                  <ul>
+                    <li>Credentials</li>
+                  </ul>
+                </li>
+                <li>
+                  Settings
+                  <ul><li>Plan</li></ul>
+                </li>
+              </ul>
+            </nav>
 
-          <div>
-            <button>Button me good +</button>
-          </div>
-        </stack-l>
+            <div>
+              <button>Kibana</button>
+            </div>
+          </stack-l>
+        </div>
 
         <!-- Sidebar page right section -->
         <div id="page-right">
           <stack-l>
 
             <!-- Top nav bar -->
-            <header>
+            <header id="page-header">
               <cluster-l justify="space-between">
                 <div>
                   <div>
@@ -102,14 +127,22 @@ title: Cluster dashboard
                 </dl>
                 <dl>
                   <dt>Tier</dt>
-                  <dd>Business Private</dd>
+                  <dd>Business</dd>
+                </dl>
+                <dl>
+                  <dt>Type</dt>
+                  <dd>Compute</dd>
+                </dl>
+                <dl>
+                  <dt>Size</dt>
+                  <dd>Large</dd>
                 </dl>
               </div>
             </cluster-l>
 
             <grid-l>
 
-              <cover-l minHeight="100%" centered="box-l" space="0">
+              <cover-l minHeight="100%" centered="box-l" space="0" noPad="true">
                 <header>
                   <cluster-l justify="space-between">
                     <div>
@@ -118,8 +151,12 @@ title: Cluster dashboard
                     </div>
                   </cluster-l>
                 </header>
-                <box-l class="height:100pct">
+                <box-l class="height:100pct" padding="0">
                   <table>
+                    <colgroup>
+                      <col class="font-family:mono">
+                    </colgroup>
+
                     <thead>
                       <tr>
                         <th>Name</th>
@@ -128,6 +165,7 @@ title: Cluster dashboard
                       </tr>
                     </thead>
                     <tbody>
+
                       <tr>
                         <td>requests-2019.10.21</td>
                         <td>32,178,299</td>
@@ -160,7 +198,7 @@ title: Cluster dashboard
                     </div>
                   </cluster-l>
                 </header>
-                <stack-l>
+                <stack-l class="height:100pct">
                   <box-l>
                     <cluster-l justify="space-between">
                       <div>
@@ -200,12 +238,12 @@ title: Cluster dashboard
                     </div>
                   </cluster-l>
                 </header>
-                <box-l class="height:100pct">
+                <box-l class="height:100pct" padding="0">
                   <table>
                     <thead>
                       <tr>
                         <th>Event</th>
-                        <th>Requested by</th>
+                        <th>Requested</th>
                         <th>Time</th>
                       </tr>
                     </thead>
