@@ -22,69 +22,226 @@ title: Cluster dashboard
   <body>
 
     <sidebar-l>
-      <div class="height-100vh">
 
-        <!-- Side of the sidebar -->
+      <div class="height:100vh">
+
+        <!-- Sidebar page right -->
         <stack-l splitafter="2">
 
           <div id="logo">logo</div>
 
-          <ul>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li>
-          </ul>
+          <nav>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+              <li>Five</li>
+            </ul>
+          </nav>
 
-          <button>Button me good +</button>
+          <div>
+            <button>Button me good +</button>
+          </div>
         </stack-l>
 
-        <!-- Sidebar main section -->
-        <main>
+        <!-- Sidebar page right section -->
+        <div id="page-right">
           <stack-l>
 
-            <cluster-l justify="space-between">
+            <!-- Top nav bar -->
+            <header>
+              <cluster-l justify="space-between">
+                <div>
+                  <div>
+                    <nav>
+                      <cluster-l>
+                        <ul>
+                          <li>
+                            One More Cloud
+                          </li>
+                          <li>
+                            bonsai-search prod
+                          </li>
+                          <li>(green)</li>
+                        </ul>
+                      </cluster-l>
+                    </nav>
+                  </div>
+                  <div>
+                    <nav>
+                      <cluster-l>
+                        <ul>
+                          <li>
+                            Apps
+                          </li>
+                          <li>
+                            Help
+                          </li>
+                          <li>
+                            User McUserFace
+                          </li>
+                        </ul>
+                      </cluster-l>
+                    </nav>
+                  </div>
+                </div>
+              </cluster-l>
+            </header>
+
+            <!-- Cluster attribute panel -->
+            <cluster-l justify="left">
               <div>
-                <div>
-
-                  <nav>
-                    <cluster-l>
-                      <ul>
-                        <li>
-                          Bread Inc
-                        </li>
-                        <li>
-                          Crumbs
-                        </li>
-                      </ul>
-                    </cluster-l>
-                  </nav>
-
-                </div>
-                <div>
-                  <nav>
-                    <cluster-l>
-                      <ul>
-                        <li>
-                          Apps
-                        </li>
-                        <li>
-                          Help
-                        </li>
-                        <li>
-                          User McUserFace
-                        </li>
-                      </ul>
-                    </cluster-l>
-                  </nav>
-                </div>
+                <dl>
+                  <dt>Region</dt>
+                  <dd>AWS US East (Virginia)</dd>
+                </dl>
+                <dl>
+                  <dt>Version</dt>
+                  <dd>7.4.2</dd>
+                </dl>
+                <dl>
+                  <dt>Tier</dt>
+                  <dd>Business Private</dd>
+                </dl>
               </div>
             </cluster-l>
 
+            <grid-l>
+
+              <cover-l minHeight="100%" centered="box-l" space="0">
+                <header>
+                  <cluster-l justify="space-between">
+                    <div>
+                      <div>Indices</div>
+                      <div></div>
+                    </div>
+                  </cluster-l>
+                </header>
+                <box-l class="height:100pct">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Docs</th>
+                        <th>Data</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>requests-2019.10.21</td>
+                        <td>32,178,299</td>
+                        <td>167.4gb</td>
+                      </tr>
+                      <tr>
+                        <td>requests-2019.10.22</td>
+                        <td>32,178,299</td>
+                        <td>167.4gb</td>
+                      </tr>
+                      <tr>
+                        <td>requests-2019.10.23</td>
+                        <td>32,178,299</td>
+                        <td>167.4gb</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                  </table>
+                </box-l>
+              </cover-l>
+
+              <cover-l minHeight="100%" centered="stack-l" space="0">
+                <header>
+                  <cluster-l justify="space-between">
+                    <div>
+                      <div>Usage</div>
+                      <div></div>
+                    </div>
+                  </cluster-l>
+                </header>
+                <stack-l>
+                  <box-l>
+                    <cluster-l justify="space-between">
+                      <div>
+                        <div>Docs</div>
+                        <div>40k / 50k</div>
+                      </div>
+                    </cluster-l>
+                    <meter min="0" max="50" value="40"></meter>
+                  </box-l>
+                  <box-l>
+                    <cluster-l justify="space-between">
+                      <div>
+                        <div>Data</div>
+                        <div>4.5TB / 10TB</div>
+                      </div>
+                    </cluster-l>
+                    <meter min="0" value="4.5" max="10"></meter>
+                  </box-l>
+                  <box-l>
+                    <cluster-l justify="space-between">
+                      <div>
+                        <div>Shards</div>
+                        <div>22 / 1,000</div>
+                      </div>
+                    </cluster-l>
+                    <meter min="0" value="22" max="1000"></meter>
+                  </box-l>
+                </stack-l>
+              </cover-l>
+
+              <cover-l minHeight="100%" centered="box-l" space="0">
+                <header>
+                  <cluster-l justify="space-between">
+                    <div>
+                      <div>History</div>
+                      <div>View all</div>
+                    </div>
+                  </cluster-l>
+                </header>
+                <box-l class="height:100pct">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Event</th>
+                        <th>Requested by</th>
+                        <th>Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Snapshot restore</td>
+                        <td>Dru Sellers</td>
+                        <td>11/19/2019</td>
+                      </tr>
+                      <tr>
+                        <td>Upgrade</td>
+                        <td>Allison Zadrozny</td>
+                        <td>11/10/2019</td>
+                      </tr>
+                      <tr>
+                        <td>Created credential</td>
+                        <td>Dan Simpson</td>
+                        <td>11/4/2019</td>
+                      </tr>
+                      <tr>
+                        <td>Created</td>
+                        <td>Dru Sellers</td>
+                        <td>11/2/2019</td>
+                      </tr>
+
+                    </tbody>
+                    <tfoot></tfoot>
+                  </table>
+                </box-l>
+              </cover-l>
+
+            </grid-l>
+
 
           </stack-l>
-        </main>
+        </div>
 
 
       </div>
