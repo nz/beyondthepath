@@ -17,7 +17,7 @@
   --color-even-darker: rgba(0, 0, 0, 0.5);
 
   /* Scale */
-  --ratio: 1.4;
+  --ratio: 1.35;
   --s-6: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
   --s-5: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
   --s-4: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));

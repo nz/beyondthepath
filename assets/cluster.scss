@@ -1,13 +1,19 @@
-
 :root {
   --measure: 60ch;
   line-height: var(--ratio);
-  font-size: calc(0.5vw + 0.5em);
-  font-family: var(--font-plain);
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
 
+  font-size: calc(0.333vw + 0.8em);
+  font-family: var(--font-plain);
+
+  background-color: var(--color-light);
+  color: rgba(0, 0, 0, 0.95);
+
+  --sidebar-left-color: rgba(255, 255, 255, 0.99);
+  --sidebar-left-background-color: rgb(78, 154, 193);
+  --sidebar-left-background-color-active: var(--color-darker);
+
+  --sidebar-right-background-color: var(--color-light);
+}
 
 
 /* utility classes */
@@ -27,6 +33,10 @@
 
 .height\:100pct {
   height: 100%;
+}
+
+.grid-column\:span-2 {
+  grid-column: span 2;
 }
 
 meter {
@@ -59,15 +69,15 @@ sidebar-l {
 /* Colors for the page left and right */
 sidebar-l > * {
   > :first-child {
-    background-color: var(--color-darkish);
-    color: var(--color-light);
+    background-color: var(--sidebar-left-background-color);
+    color:            var(--sidebar-left-color);
     // darken the active nav element
     .active {
-      background-color: var(--color-darker);
+      background-color: var(--sidebar-left-background-color-active);
     }
   }
   > :last-child {
-    background-color: var(--color-light);
+    background-color: var(--sidebar-right-background-color);
   }
   #page-logo {
     // background-color: rgba(0, 0, 0, 0.15);
@@ -86,13 +96,17 @@ nav ul {
 
 /* Indent nav lists on the left sidebar */
 sidebar-l > * > :first-child {
+  nav li {
+    padding-top:    var(--s-3);
+    padding-bottom: var(--s-3);
+  }
   nav li li {
     padding-left: var(--s-2);
   }
   nav > ul > li {
     font-weight: 500;
-    font-variant: all-small-caps;
-    letter-spacing: var(--s-6);
+    text-transform: uppercase;
+    // letter-spacing: var(--s-6);
     margin-bottom: var(--s0);
 
     > ul {
@@ -102,6 +116,7 @@ sidebar-l > * > :first-child {
       font-weight: normal;
       font-variant: normal;
       letter-spacing: normal;
+      text-transform: none;
     }
   }
 
@@ -121,7 +136,7 @@ sidebar-l > * > :first-child {
 /* terms and definitions */
 dt {
   font-size: var(--s-1);
-  font-variant: all-small-caps;
+  text-transform: uppercase;
 }
 
 table {
@@ -167,12 +182,12 @@ cover-l > header {
   // this rule contradicts the cover-l inline style
   // but the cover-l padding rules are too aggressive for our purposes
   margin-bottom: var(--s-1) !important;
+  font-size: var(--s-1);
 
   > cluster-l > * {
     > :first-child {
       font-weight: 500;
       font-variant: all-small-caps;
-      font-size: var(--s-1);
     }
     > :last-child {
       font-size: var(--s-1);
@@ -183,5 +198,6 @@ cover-l > header {
 /* Our boxes have a shadow instead of a border */
 box-l {
   background-color: var(--color-lightest);
-  box-shadow: 0 0 var(--s-4) var(--s-5) rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 var(--s-4) var(--s-6) rgba(0, 0, 0, 0.1);
+  border-radius: var(--s-6);
 }

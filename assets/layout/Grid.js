@@ -45,7 +45,7 @@ export default class Grid extends HTMLElement {
   }
 
   get space() {
-    return this.getAttribute('space') || 'var(--s0)';
+    return this.getAttribute('space') || 'var(--s1)';
   }
 
   set space(val) {
