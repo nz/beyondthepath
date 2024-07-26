@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="/assets/btp.js"></script>
-    <link rel="stylesheet" href="/assets/btp.css"/>
+    <link rel="stylesheet" href="/assets/btp.css" />
 
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
-      {%- include google-analytics.html -%}
+    {%- include google-analytics.html -%}
+
+    {%- endif -%}
+
+    {%- if page.title -%}
+    <title>{{ page.title }}</title>
+    {%- else -%}
+    <title>Beyond the Path - Nick's Thoughts About Business and Software</title>
     {%- endif -%}
 
   </head>
