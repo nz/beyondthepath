@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+kind=$1
+shift
+
+function new_post() {
+    title="$*"
+    filename="_posts/$(date +%Y-%m-%d)-$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g;s/-+/-/').md"
+    (
+        echo "---"
+        echo "title: $title"
+        echo "layout: post"
+        echo "---"
+        echo
+    ) >"$filename"
+    code -g "$filename":5
+}
+
+case $kind in
+post)
+    new_post "$@"
+    ;;
+*)
+    exit 1
+    ;;
+esac
