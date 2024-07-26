@@ -1,21 +1,18 @@
 #!/bin/bash
 
-set -e
-cd "$(dirname $0)/.." || exit
-export PATH="./bin:$PATH"
-
 setup
 build
 
 # Start Jekyll in the background
-bundle exec jekyll build --incremental --watch &
+jekyll build --incremental --watch &
 
 # Start Parcel in the background
 yarn parcel serve _site/index.html -d public &
 
 # Wait for Parcel's HTTP server, then open it in a browser
-# while ! curl -s -o /dev/null http://localhost:1234/; do sleep 0.1; done
-# open http://localhost:1234/
+sleep 0.5
+while ! curl -s -o /dev/null http://localhost:1234/; do sleep 0.5; done
+open http://localhost:1234/
 
 # Block on background tasks
 wait

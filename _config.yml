@@ -49,3 +49,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - yarn.lock
+  - flake.nix
+  - flake.lock

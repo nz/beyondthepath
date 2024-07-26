@@ -1,7 +1,4 @@
 #!/bin/bash
 
-set -e
-cd "$(dirname $0)/.." || exit
-
-bundle exec jekyll build
+jekyll build
 yarn parcel build _site/index.html -d public
